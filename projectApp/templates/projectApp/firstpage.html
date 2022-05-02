@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'projectApp/css/styles.css'%}?{%now 'U' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+ <body>
+    <section class = "first" style = "background-image:linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('https://gardeshbama.com/wp-content/uploads/2017/11/discover-kazahkstan-min.jpg');
+    ">
+    <nav>
+        <div class = "link">
+            <ul>
+                <li><a href="http://127.0.0.1:8000/second/">Places to go</a></li>
+                <li><a href="http://127.0.0.1:8000/next/">Music events</a></li>
+                <li><a href="http://127.0.0.1:8000/nature/">Our nature</a></li>
+                <li><a href="http://127.0.0.1:8000">Real life feedbacks</a></li>
+            </ul>
+        </div>
+    </nav>
+       
+        <div class = "header" style="font-family: 'Montserrat', sans-serif;">
+            <h1 style = "font-size:5vw;">Welcome to Kazakhstan!</h1>
+            <p style = "font-size:3vw; font-family: 'Montserrat', sans-serif;">Where to go in Almaty? Places, events, tours</p>
+        </div>
+    </section>
+</body>
+
+</html>

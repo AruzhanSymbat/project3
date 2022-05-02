@@ -1,0 +1,13 @@
+{% extends 'projectApp/one.html' %}
+{% block content %}
+<h1>{{title}}</h1>
+<ul>
+    {% for s in posts %}
+    <li>
+        <h2>{{s.title}}</h2>
+        <p>{{s.content}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

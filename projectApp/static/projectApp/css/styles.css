@@ -1,0 +1,136 @@
+.first{
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://gardeshbama.com/wp-content/uploads/2017/11/discover-kazahkstan-min.jpg');
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.font{
+    font-family:'Montserrat', sans-serif;
+    }
+.header{
+width:90%;
+color:#ffffff;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+text-align:center;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+    }
+    .link{
+    flex:1;
+    text-align:right;
+    }
+    .link ul li{
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+    }
+    .link ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:20px;
+    font-family:'Montserrat', sans-serif;
+    }
+    .link ul li::after{
+    content:'';
+    width:0%;
+    height:3px;
+    background:#FF7F50;
+    margin:auto;
+    display:block;
+    transition:0.3s;
+    }
+    .link ul li:hover::after{
+    width:100%;
+    }
+
+    .first{
+        min-height:100vh;
+        width:100%;
+        background-image:linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('https://turkystan.kz/wp-content/uploads/2017/10/01_7715.jpg');
+        background-position:center;
+        background-size:cover;
+        position:relative;
+        }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+    }
+    .tech{
+    width:80%;
+    text-align:center;
+    margin:auto;
+    font-family:'Montserrat', sans-serif;
+    font-size:30px;
+    }
+    .tech-col{
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+    }
+    .tech-col>img{
+    width:100%;
+    }
+    .textl{
+    background:transparent;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.4s;
+    }
+    .textl:hover{
+    background:rgba(65, 105, 225,0.4);
+    }
+    .textl>h3{
+    width:100%;
+    color:#FFFFFF;
+    font-size:26px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    transition:0.5s;
+    opacity:0;
+    }
+    .textl:hover h3{
+    bottom:35%;
+    opacity:1;
+    }
+    .imgRight {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    .contacts{
+        margin:20px auto;
+        width:80%;
+        background-position:center;
+        background-size:center;
+        border-radius:10px;
+        padding:100px 0;
+        text-align:center;
+        }

@@ -1,0 +1,13 @@
+{% extends 'projectApp/two.html' %}
+{% block content %}
+<h1>{{title}}</h1>
+<ul>
+    {% for m in posts %}
+    <li>
+        <h2>{{m.title}}</h2>
+        <p>{{m.content}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

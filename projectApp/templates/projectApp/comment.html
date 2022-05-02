@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color:#ababf3;">
+<nav class="navbar navbar-light" style="background-color:#6A5ACD;">
+    <a href="http://127.0.0.1:8000/firstpage/" class="navbar-brand" style="background-color:#FF7F50;color:#000000;border-width:10px;border-color:#FF7F50;border-style:solid;border-spacing:30px;border-radius: 5px;">Main Page</a>
+    <a class="navbar-link btn-lg" href="{% url 'index' %}" style="background-color:#FF7F50;color:#000000;">Feedback with photos</a>
+<a href="{% url 'admin:index' %}" class = 'navbar-link btn-lg' style="background-color:#FF7F50;color:#000000;">Admin</a>
+    <a href="{% url 'upload-feedback' %}" class="navbar-link btn-lg" style="background-color:#FF7F50;color:#000000;">Upload Photos</a>
+    <a href="{% url 'register' %}" class="navbar-link btn-lg" style="background-color:#FF7F50;color:#000000;">Registration</a>
+    <a href="http://127.0.0.1:8000/send/" class="navbar-brand" style="background-color:#FF7F50;color:#000000;border-width:10px;border-color:#FF7F50;border-style:solid;border-spacing:30px;border-radius: 5px;">Email</a>
+</nav>
+<br>
+
+{% block content %}
+<div class="card-columns">
+    {% for feedback in shelf %}
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ feedback.picture.url }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ feedback.name }}</h5>
+    <p class="card-text">{{ feedback.describe }}</p>
+   <div class="card-footer bg-transparent border-dark">
+   <p class="card-title">{{feedback.author}}</p>
+   <center>
+       <a href="update/{{feedback.id}}" class="btn btn-warning" id = '{{feedback.id}}'>edit</a>
+       <a href="delete/{{feedback.id}}" class="btn btn-danger" id = '{{feedback.id}}'>delete</a>
+    </center>
+    </div>
+  </div>
+</div>
+
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>

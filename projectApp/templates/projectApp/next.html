@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Music page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'projectApp/css/styles.css'%}?{%now 'U' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+ <body>
+     <section class = "first" style = "background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://turkystan.kz/wp-content/uploads/2017/10/01_7715.jpg');
+">
+<nav>
+    <div class = "link">
+        <ul>
+            <li><a href="http://127.0.0.1:8000/firstpage/">Main page</a></li>
+            <li><a href="http://127.0.0.1:8000/second/">Places to go</a></li>
+            <li><a href="http://127.0.0.1:8000/nature/">Our nature</a></li>
+        </ul>
+    </div>
+</nav>
+   
+    <div class = "header" style="font-family: 'Montserrat', sans-serif;">
+        <h1 style = "font-size:5vw;">Kazakhstan music events</h1>
+        <p style = "font-size:3vw; font-family: 'Montserrat', sans-serif;">Order tickets for orchestra, concerts and more!</p>
+    </div>
+</section>
+<section class = "tech">
+    <h1 style="font-size: 3vw;">Music events in Almaty this spring!</h1>
+    <div class ="row">
+        <div class = "tech-col">
+            <img class="imgRight"  src="https://pbs.twimg.com/media/EJQ_z_jX0AAk8lZ.jpg" style="width: 100%;
+            max-width: 400px;
+            height:auto;">
+            <div class ="textl">
+                <h3 style="font-size: 2vw;">Tik-Tok maraphon for kids!</h3>
+            </div>
+        </div>
+        <div class = "tech-col">
+            <img class="imgRight" src="https://kassir.kz/files/events/10389-xXmmxebE-1645675116.jpg" style="width: 100%;
+            max-width: 400px;
+            height:auto">
+            <div class ="textl">
+                <h3 style="font-size: 2vw;">Tolqyn Music festival</h3>
+            </div>
+        </div>
+        <div class = "tech-col">
+            <img class="imgRight" src="https://keste.kz/wp-content/uploads/2019/01/11090u30239_dara-v-muzkafe-1.jpg" style="width: 100%;
+            max-width: 400px; height: auto;">
+            <div class ="textl">
+                <h3 style="font-size: 2vw;">"Dara" group author evening</h3>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

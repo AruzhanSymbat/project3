@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>nature</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'projectApp/css/styles.css'%}?{%now 'U' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+ <body>
+     <section class = "first" style = "background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://skyview.kz/wp-content/uploads/2016/11/IMG_6115.jpg');
+    ">
+    <nav>
+        <div class = "link">
+            <ul>
+                <li><a href="http://127.0.0.1:8000/firstpage/">Main page</a></li>
+                <li><a href="http://127.0.0.1:8000/second/">Places to go</a></li>
+                <li><a href="http://127.0.0.1:8000/next/">Music events</a></li>
+                <li><a href="http://127.0.0.1:8000/secondmodel/">Info</a></li>
+            </ul>
+        </div>
+    </nav>
+       
+        <div class = "header" style="font-family: 'Montserrat', sans-serif;">
+            <h1 style = "font-size:5vw;">Mountains are a place of power</h1>
+            <p style = "font-size:3vw; font-family: 'Montserrat', sans-serif;">Incredible places in the mountains of Almaty!</p>
+        </div>
+    </section>
+    <section class = "tech">
+        <h1 style="font-size: 3vw;">Places where you can enjoy silence and clear your mind</h1>
+        <div class ="row">
+            <div class = "tech-col">
+                <img class="imgRight"  src="https://im0-tub-kz.yandex.net/i?id=eb10632591ee240b9dd1389cd5ae9a29-l&n=13" style="width: 100%;
+                max-width: 400px;
+                height:600px;">
+                <div class ="textl">
+                    <h3 style="font-size: 2vw;">Oktyabrskaya cave, Bogdanovich glacier.</h3>
+                </div>
+            </div>
+            <div class = "tech-col">
+                <img class="imgRight" src="https://a.d-cd.net/5c04324s-960.jpg" style="width: 100%;
+                max-width: 400px;
+                height:600px">
+                <div class ="textl">
+                    <h3 style="font-size: 2vw;">Butakovsky waterfall</h3>
+                </div>
+            </div>
+            <div class = "tech-col">
+                <img class="imgRight" src="https://pbs.twimg.com/media/DQasMrCUEAAo1V4.jpg:large" style="width: 100%;
+                max-width: 400px; height: 600px;">
+                <div class ="textl">
+                    <h3 style="font-size: 2vw;">Big Almaty Lake</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "contacts" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://tr-kazakhstan.kz/wp-includes/2015/05/top_bbdb0f_1363326307.jpg');">
+        <h1  class="font" style = "color:#FFFFFF; font-size:4vw;">What other places would you recommend to visit?</h1>
+        <p  class="font" style = "color:#FFFFFF; font-size:1.5vw;">You can upload your real life pictures! Leave your email :)</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Places to go</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'projectApp/css/styles.css'%}?{%now 'U' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+ <body>
+    <section class = "first" style = "background-image:linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('https://ticketon.kz/files/media/581c3d21c404d_1.jpg');
+    ">
+    <nav>
+        <div class = "link">
+            <ul>
+                <li><a href="http://127.0.0.1:8000/firstpage/">Main page</a></li>
+                <li><a href="http://127.0.0.1:8000/next/">Music events</a></li>
+                <li><a href="http://127.0.0.1:8000/nature/">Our nature</a></li>
+                <li><a href="http://127.0.0.1:8000/firstmodel/">Info</a></li>
+            </ul>
+        </div>
+    </nav>
+       
+        <div class = "header" style="font-family: 'Montserrat', sans-serif;">
+            <h1 style = "font-size:5vw;">Where to go on the weekends?</h1>
+            <p style = "font-size:3vw; font-family: 'Montserrat', sans-serif;">Exhibitions, events, museums, performances and more!</p>
+        </div>
+    </section>
+    <section class = "contacts" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://kartinkin.net/uploads/posts/2021-07/thumbs/1625149271_22-kartinkin-com-p-kinoteatr-art-kholl-art-krasivo-22.jpg');">
+        <h1  class="font" style = "color:#FFFFFF; font-size:4vw;">Aspancinema: film screenings</h1>
+        <p  class="font" style = "color:#FFFFFF; font-size:1.5vw;">Timiryazeva street, 42 - 15. Price : 3000tg</p>
+    </section>
+    <section class = "contacts" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://cabnews.kz/wp-content/uploads/2021/07/image16_lifestyledesignmuzey-im-a-kasteeva-istoriya-arkhitektura-i-perspektivy.jpg');">
+        <h1  class="font" style = "color:#FFFFFF; font-size:4vw;">Kazakhstan is a country of mountains and steppes</h1>
+        <p  class="font" style = "color:#FFFFFF; font-size:1.5vw;">A.Kasteev museum, Koktem-3. Price: 200-500tg</p>
+    </section>
+    <section class = "contacts" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://vlast.kz/media/upload/images/219dc11ca7747c5b42e45aae52a7a5de.jpg');">
+        <h1  class="font" style = "color:#FFFFFF; font-size:4vw;">Creative theater La Boheme</h1>
+        <p  class="font" style = "color:#FFFFFF; font-size:1.5vw;">Zenkova street, 24. Price : 2300tg</p>
+    </section>
+</body>
+
+
+</html>
